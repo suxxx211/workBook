@@ -1,0 +1,21 @@
+#####################################################################################
+# File: git_operation.txt
+#
+# Description: This file records some basic git command information.
+#
+# Author: laoJiao
+#
+# CreateTime: 2019/6/13 16.37
+#
+# History: 
+#          1.2019/6/13 16.37 Create the initial version. By laoJiao.
+#
+#####################################################################################
+
+
+git clone <URL>
+git config user.name <Author_Name>
+git config user.email <Author_E-mail>
+git add <Modify_File>
+git commit -M <Modify_Infomation>
+git push
