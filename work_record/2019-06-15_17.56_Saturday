@@ -1,0 +1,32 @@
+# This document records daily work and other log infomation.
+
+2019/6/14 9.32 Friday
+
+.WORK_PLAN
+  
+.STUDY_PLAN
+    1.学习html中<audio>组件的使用。
+    2.初步学习css相关知识。
+    3.学习强国
+    
+.WORK_COMPLETION
+
+.STUDY_COMPLETION
+    
+.SUMMARY
+    html<audio>组件为html5自带支持的音频播放器。再次基础上实现了一个支持列表循环播放的自动播放器。下面记录用到的关键知识点。
+    1.javascript中调用：
+        document.createElement('audio')创建一个<audio>组件对象。其中'audio'参数可替换为其他组件。
+        document.getElementById('add_input_music_src')获取id为add_input_music_src的组件对象。
+        数组长度获取:var len = array.length;
+        事件：object.addEventListener('event', function)，还有一个bool参数，忘了是啥了。object为组件对象，调用改方法，为组件对象的该事件增加回调函数。需要注意的是回调函数内部的this指针指向该object。
+    2.html<audio>组件属性和方法：
+        .src：指定music链接；     .volume：控制音量大小，取值范围[0,1]，0为静音；
+        .play()：该方法调用还开始播放.src属性中指定的url音频。
+    3.html<input>组件属性：
+        .type：控制数据内容；     .value：控制显示信息；    .onclick：如果type为'button'则该属性中为点击后执行的函数。
+    4.css相关：
+        css定义以<style></style>起始和结束，放在html的head中。可以以html标签、组件id、class为基础进行配置。
+        html标签举例：body {background-color:#d0e4fe;}
+        组件id举例：#para1 {text-align:center;}  //id选择器以#+id表示，id属性不以数字开头
+        class举例：.class1 {text-align:center;}    //class选择器以.+class表示
