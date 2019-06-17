@@ -19,3 +19,14 @@ git config user.email <Author_E-mail>
 git add <Modify_File>
 git commit -M <Modify_Infomation>
 git push
+
+#Updata fork remote code.
+git remote add <local_branch_name> <remote_url>
+git remote -v
+git fetch <local_branch_name>
+git branch -a
+git merge <local_branch_name/master>
+git push
+
+
+
