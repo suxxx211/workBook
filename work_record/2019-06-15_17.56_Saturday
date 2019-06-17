@@ -31,4 +31,4 @@
         组件id举例：#para1 {text-align:center;}  //id选择器以#+id表示，id属性不以数字开头
         class举例：.class1 {text-align:center;}    //class选择器以.+class表示
     5.GithubWiki中使用到html<a>组件：超链接。
-        .href：控制超链接url；     .target：控制新网页以什么形式打开，可选值为{'view_window':在新标签页打开,}别的暂时没用到。
+        .href：控制超链接url；     .target：控制新网页以什么形式打开，可选值为{'view_window':在新标签页打开,"_blank":在新页面中打开,}别的暂时没用到。
