@@ -1,0 +1,30 @@
+#####################################################################################
+# File: notepad_operation.txt
+#
+# Description: This file records some basic notepad shortcut-key information.
+#
+# Author: laoJiao
+#
+# CreateTime: 2019/6/18 11.22
+#
+# History: 
+#          1.2019/6/18 11.22 Create the initial version. By laoJiao.
+#
+#####################################################################################
+
+#注释
+    ctrl + q
+    ctrl + shift + k
+
+#选中
+    ctrl + home	//选中光标当前位置到该行行首内容
+    ctrl + end	//选中光标当前位置到该行行尾内容
+    ctrl + pageUp	//选中光标当前位置到该文件向上一页内容
+    ctrl + pageDown	//选中光标当前位置到该文件向下一页内容
+
+#大小写转换
+    ctrl + u	//转化为小写
+    ctrl + shift + u	//转换为大写
+    alt + u	//单词首字母大写
+    alt + ctrl + u	//句首字母大写
+
