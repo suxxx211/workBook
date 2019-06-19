@@ -1,6 +1,6 @@
 # This document records daily work and other log infomation.
 
-2019/6/19 00.00 Wednesday
+2019/6/19 23.09 Wednesday
 
 .WORK_PLAN
     剩余页面模块：mirror、trunk、gmrp、gvrp
@@ -21,15 +21,26 @@
     晚上时间可能不准，但是7必须要做，其他娱乐可自由安排一些。
     
 .WORK_COMPLETION
-
+    1.lldp报文统计页面没有做。
+    2.镜像配置页面完成，解决了挺多小问题，要想好好学，就得慢一点，弄这个页面弄了好久，但是好好弄完之后，后面在遇到就快了。
+    3.trunk配置页面完成。
+    
 .STUDY_COMPLETION
+    工作时间太紧了，今天中午都没睡觉。所以学习的时间少了，基本上啥也没看。
+    1.Finish
+    2.未完成，学习这部分知识移动到<23.30-24.00>完成
+    3.No sleep
+    4.Finish
+    5.work
+    6.没视频，打电话了。
+    7.Finish.用360浏览器，太慢了，合并都打不开，换了谷歌。
     
 .SUMMARY
     1.html <radio> 单选框的单选控制：
         只要<radio>中的name属性一致，那么多个单选框就会起到互斥的效果。
     2.html <select> 和 <option> 下拉框属性：
-        .id 就是组件的id，可以通过getElementById选中，之后通过obj.value属性获取到下拉框当前选择的值。
-        <option> 属性.value如果有这个属性，那么最终提交和获取到打value实际上是它的值，此时<option></option>中间的值仅仅用作显示。
+        .id 就是组件的id，可以通过getElementById选中，之后通过obj.value属性获取到下拉框当前选择的value属性的值。
+        <option> 属性.value如果有这个属性，那么最终提交和获取到的value实际上是它的值，此时<option></option>中间的值仅仅用作显示。
                  属性.selected控制是否选中。
     3.vue.js 在js中new了vue对象，然后就可以在html中使用v-*类型的扩展属性去直接引用js中vue对象的data数据。
         例如html中：<span v-for="idx in ports"></span>
@@ -47,23 +58,27 @@
              }
         这样可以在html中调用js中的变量，也是vuejs的功能，还有一种{{ ports[idx]["uport"] }}也能使用，有什么区别，还需要继续分析。
     4.vue.js v-for 和 冒号：
-        需求：在html v-for中使用idx，赋值给for循环内其他标签的属性。
+        需求：在html v-for中使用idx，赋值给for循环内其他元素的属性。
         实现：<span v-for="(des_port_el, dex_idx) in des_ports" v-model="des_ports">
                   <input type="radio" name="mirror_to" :id='"mirror_to_radio_eport" + port_el.uport' v-if="port_el.iport == des_port_el" checked ></input>
               </span>
-        我想用idx给redio的id属性赋值，为了实现28个端口不同的id，怎么试都不行，最后看到这个，具体原理不太清楚，还要继续分析。
+        我想用idx给redio的id属性赋值，为了实现28个端口不同的id，怎么试都不行，最后看到这个，具体原理不太清楚，还要继续分析。简单总结就是：属性前加个冒号，你就也能用那些不是原始html的变量了。
         参考：https://segmentfault.com/a/1190000010958154?utm_source=tag-newest
     5.vue.js v-on:click 点击事件触发
         需求：在4<input>中，点击一次radio，就触发调用一次指定函数，去获取点击对象的id，从而获取选中的是那个端口。
         实现：<input type="radio" name="mirror_to" :data-id="port_el.uport" :id='"mirror_to_radio_eport" + port_el.uport' v-on:click="checked_radio_des_ports(this, $event, port_el.iport)" v-else></input>
-        调试发现：使用html中onclick属性指定函数，只能使用new Vue之外的，也就是script中定义的全局函数，不能使用vue实例中method中的函数。此时传入this，则this表示当前组件的对象。
+        调试发现：使用html中onclick属性指定函数，只能使用new Vue之外的，也就是script中定义的全局函数，不能使用vue实例中method中的函数。此时传入this，则this表示当前组件元素的对象。
                   使用v-on:click || @click可以调用vue实例method中的函数。此时传入this，则this为顶层window对象。
         参考：https://blog.csdn.net/qq_34645412/article/details/79100669
-    6.$event 表示产生的事件对象，点击事件对应：MouseEvent，里面有各种方法，可以在w3网站上查到event标准属性。其中.target属性获取当前发送点击事件的组件(元素)对象。
-        使用方法：var el = event.target;    var el_id = event.target.id;
+    6.$event 表示产生的事件对象，可以在html中vue的扩展属性中使用，也可能是jQuery的，点击事件对应：MouseEvent，里面有各种方法，可以在w3网站上查到event标准属性。其中.target属性获取当前发送点击事件的组件(元素)对象。
+        使用方法：var el = event.target; 获取触发事件的元素对象    var el_id = event.target.id; 获取对象的id属性
         参考：https://www.cnblogs.com/lina-xiao/p/8331529.html
-
     7.html 元素的id属性中不要带.符号
     8.jQuery 根据id获取元素对象：
         $("#element_id").val() 获取vlaue属性的值    .prop("checked") 检查复选框checked状态，返回true or false。
         $("#element_id option:selected").val 获取下拉框选中value属性的值    .text 获取下拉框所选择的文本    备注：不加option:selected也可以
+    上面记录的东西在最近的页面制作中应该都能用到，所以质量很高。不过还是不太确定像$符号，@符号的意义，不知道到底是jQuery的还是vue的，这些在后面的实践中继续学习弄懂吧。总之今天虽然进度慢，但是收获很大。但是中午没睡觉，明显感觉下午有点飘，精神有点不能集中，也是正常现象，毕竟晚上睡觉太晚了。
+    有点累和困，先不写那么多了，写完plan，一会在学习一下md文件的编辑吧，上次看有个md里面加的有图片有导航，感觉很棒，也准备先加一个丽丽的照片进去，嘿嘿嘿。    
+    
+    
+    
