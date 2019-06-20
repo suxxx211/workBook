@@ -23,7 +23,28 @@
     10.买纯奶，奶喝完了。
     
 .WORK_COMPLETION
-    
+    1.完善trunk配置页面，增加了显示页面，就在配置上改了一点点。
+    2.完成gmrp配置、时间配置页面，也调试了前端数据处理部分。
+    3.把gmrp的拷贝成gvrp的，一模一样改了名字，用时20s，哈哈哈。
+    4.working
+    说完成port部分数据处理，就要完成，而且port也就端口统计的数据处理，增加了appdemo的处理，正在验证。还有一个，前端数据处理提交大部分数据的时候，最好增加判断，只提交需要修改的部分数据，还有需要注意的是，前端中data中有的有port参数，并没有对应起来，还是默认了，后台会传送port number个数据过来，正常情况肯定没问题，但是需要注意一下。
+
 .STUDY_COMPLETION
     
 .SUMMARY
+    先学习了markdown的列表list用来分章节的操作，加入表情的操作:
+    1.markdown <list> 使用 * + - 三个符号在行首，可以将该行标记为一列，生成无序列表。
+        使用 1. 带序号的，生成有序列表。
+        使用tab缩进，可以将该行定义为前不带缩进行的子列表，很简单也好理解，记不住了去试一下就知道了。
+    2.markdown <:+1:> 添加一个点赞的表情，其中::为固定语法格式，中间的+1为特定点赞表情，也还有其他的，用到了再补充。
+    3.chrome 浏览器默认禁止html<audio>等音视频元素的自动播放，本地修改浏览器方法支持自动播放：地址栏进入 chrome://flags/ 搜索 autoplay policy 关闭掉这个policy。
+    4.js中的unsigned int：默认所有的整形都是signed，可以通过a = a >>> 0来将a转换为unsigned int。
+    5.html <checkbox> .disabled 禁止选中，其他元素应该也类似。
+    6.html <select>中使用$("#select_id").val()等方法获取到的value是<option>中的vlaue。小知识点，记下来。
+    7.js bool类型转换为int型: var enable = true; console.log(enable * 1); 输出：1
+         int 类型转bool类型：var port = 8; console.log(!!port); 输出：true
+    
+
+
+
+         
