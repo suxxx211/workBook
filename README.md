@@ -27,3 +27,16 @@
     - :heart: 做一个丽丽的课表显示web，可以导入全校课表数据，解析显示出丽丽的排课，需要一个导入按钮，一个显示列表。还需要考虑导入的数据。剩下的就是web文件传输的实现了。 2019/6/20 23.54 by suxxx
     
     - :orange_book: 修改readme.md文件，创建work record的列表和超链接，做一个简单的列表导航栏。 2019/6/20 23.54 by suxxx
+    
+    - 考虑要不要把record也使用markdown来写，看起来个人能够好看一些。可以
+
+### Log Table
++ [6-14 Fist Time 新的开始](https://raw.githubusercontent.com/suxxx211/helloword/master/work.record)
++ [6-15 Html <audio> 元素 和 js 创建元素](https://raw.githubusercontent.com/suxxx211/helloword/master/work_record/2019-06-15_17.56_Saturday)
++ [6-16 Null](aa)
++ [6-17 Nice Day](https://raw.githubusercontent.com/suxxx211/helloword/master/work_record/2019-06-17_22.29_Monday)
++ [6-18 js <checkbox>选中状态获取 jquery根据id获取元素对象 html .for属性 css # .](https://raw.githubusercontent.com/suxxx211/helloword/master/work_record/2019-06-18_22.51_Tuesday)
++ [6-19 干货 html <radio>.name属性 \<select\>.id属性 vue.js v-* :(绑定) v-on $event jquery 获取元素属性值](https://raw.githubusercontent.com/suxxx211/helloword/master/work_record/2019-06-19_23.09_Wednesday)
++ [6-20 markdown 列表 :beginner: js int->u_int int<->bool html .disablle/value属性](https://raw.githubusercontent.com/suxxx211/helloword/master/work_record/2019-06-20_23.02_Thursday)
++ [6-21 strtok and strtor_r(可重入)](https://raw.githubusercontent.com/suxxx211/helloword/master/work_record/2019-06-21_23.54_Friday)
++ [6-22 Unfinish](https://raw.githubusercontent.com/suxxx211/helloword/master/work_record/2019-06-22_00.00_Saturday)
