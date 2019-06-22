@@ -31,12 +31,13 @@
     - 考虑要不要把record也使用markdown来写，看起来个人能够好看一些。可以
 
 ### Log Table
-+ [6-14 Fist Time 新的开始](https://raw.githubusercontent.com/suxxx211/helloword/master/work.record)
-+ [6-15 Html <audio> 元素 和 js 创建元素](https://raw.githubusercontent.com/suxxx211/helloword/master/work_record/2019-06-15_17.56_Saturday)
++ [6-14 Fist Time 新的开始](https://raw.githubusercontent.com/suxxx211/helloworld/master/work.record)
++ [6-15 Html <audio> 元素 和 js 创建元素](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-06-15_17.56_Saturday)
 + [6-16 Null](aa)
-+ [6-17 Nice Day](https://raw.githubusercontent.com/suxxx211/helloword/master/work_record/2019-06-17_22.29_Monday)
-+ [6-18 js <checkbox>选中状态获取 jquery根据id获取元素对象 html .for属性 css # .](https://raw.githubusercontent.com/suxxx211/helloword/master/work_record/2019-06-18_22.51_Tuesday)
-+ [6-19 干货 html <radio>.name属性 \<select\>.id属性 vue.js v-* :(绑定) v-on $event jquery 获取元素属性值](https://raw.githubusercontent.com/suxxx211/helloword/master/work_record/2019-06-19_23.09_Wednesday)
-+ [6-20 markdown 列表 :beginner: js int->u_int int<->bool html .disablle/value属性](https://raw.githubusercontent.com/suxxx211/helloword/master/work_record/2019-06-20_23.02_Thursday)
-+ [6-21 strtok and strtor_r(可重入)](https://raw.githubusercontent.com/suxxx211/helloword/master/work_record/2019-06-21_23.54_Friday)
-+ [6-22 Unfinish](https://raw.githubusercontent.com/suxxx211/helloword/master/work_record/2019-06-22_00.00_Saturday)
++ [6-17 Nice Day](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-06-17_22.29_Monday)
++ [6-18 js <checkbox>选中状态获取 jquery根据id获取元素对象 html .for属性 css # .](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-06-18_22.51_Tuesday)
++ [6-19 干货 html <radio>.name属性 \<select\>.id属性 vue.js v-* :(绑定) v-on $event jquery 获取元素属性值](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-06-19_23.09_Wednesday)
++ [6-20 markdown 列表 :beginner: js int->u_int int<->bool html .disablle/value属性](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-06-20_23.02_Thursday)
++ [6-21 strtok and strtor_r(可重入)](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-06-21_23.54_Friday)
++ [6-22 思考一下地址十六进制的转换](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-06-22_23.58_Saturday)
++ [6-23 周末不加班了 Nice day](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-06-23_00.00_Sunday)
