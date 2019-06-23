@@ -29,6 +29,8 @@
     - :orange_book: 修改readme.md文件，创建work record的列表和超链接，做一个简单的列表导航栏。 2019/6/20 23.54 by suxxx
     
     - 考虑要不要把record也使用markdown来写，看起来个人能够好看一些。可以
+    
+    -这些弄完后，还考虑vue.js和复习c++相关知识。在晚上留言板之后吧，课表优先级较低。要不在留言板中引入vue.js吧，这样两个都学习了，好就这样。
 
 ### Log Table
 + [6-14 Fist Time 新的开始](https://raw.githubusercontent.com/suxxx211/helloworld/master/work.record)
