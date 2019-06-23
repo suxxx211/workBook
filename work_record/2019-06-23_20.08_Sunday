@@ -1,0 +1,39 @@
+# This document records daily work and other log infomation.
+
+2019/6/23 20.08 Sunday
+
+.WORK_PLAN
+    可以休息喽。
+    
+.STUDY_PLAN
+    1.<-12.00>sleep
+    2.学习强国文章、视频学习。
+    可选任务：
+    3.player播放器显示播放状态，暂停，因为老是播放，有时候真不想听了，还有删除，有些歌不太想听，还可以保存歌单。。。
+    4.留言板开始启动。
+    5.丽丽课表开始启动。
+    
+    买奶 买奶 买奶
+    
+.WORK_COMPLETION
+    
+    
+.STUDY_COMPLETION
+    1.一下睡到12点多，晚上睡的太晚了。
+    2.正在学。
+    3.写的都没完成，但是完成了歌单文件的加载和导出，也就是读取文件和下载文件。
+    奶买到了，46块感觉变贵了，但是条码没扫到，不知道是不是假的蒙牛。。。下回去网上买一次试试吧。
+    
+.SUMMARY
+    下载文件主要用到：html <a>.download属性，URL，Blob 实现过程大致记录一下：load button 点击 -> 处理函数中将music_info转换数组，做为blob构造方法的参数 -> 调用URL.createObjectURL创建blob对象的URL链接，并赋值给<a>.href属性，download属性为下载的文件名 -> 调用a.click()触发<a>点击事件，下载文件。
+    上传文件主要用到：html <input type="file"> 也是button的形式，点击后弹出选择文件的框，选完之后会触发onchange事件，我们在onchange事件处绑定相应对的处理函数，这里有一个问题，input file会记住之前传入的文件名，如果两次处理的文件名相同，那么是不会触发onchange事件的，我的解决办法是，js中调用createElement()动态创建file类型的<input>，一直创建没有删除，不知道会不会造成内存泄漏。在事件处理中文件的数据保存在event.target.files中。这是一个file对象的数组，也就是说file类型的<input>支持多个文件，之后我们使用FileReader去从file对象中读取数据。首先用new FileReader()创建FileReader对象，设置其onerror事件和onload事件处理函数，分别是出错处理和读取完成处理。设置完成后调用obj.readAsText(file_obj)，参数为file对象，读取为text类型数据，结果保存在，onload事件的event.target.result中，剩下的就是字符串处理了。
+    1.html <fieldset>和<legend>用来用线条将几个元素框起来，看起来好看，其中<legend>显示fieldset的标题</legend>
+    2.html <a> .download属性，点击超链接后，触发下载链接url指向的东西，值为保存的文件名。配合js<blob>和<URL>使用。
+    2.css .text-align属性只是将块内内容行的对齐方式，值为：left rigth center
+          .margin属性控制块元素整体水平对齐方式，margin:auto;水平居中 说在ie8前的浏览器有兼容性问题。margin-left:auto; 右对齐 margin-right:auto; 左对齐 你没看错，我也没写错，就是这样的，不过要和 width:70%; 这样配合起来使用，如果是100%，是没什么效果的。如果两个都设置成auto那么就是居中了。
+          .float:属性也是左右对齐，不过没咋用，也只能左右，不能居中。
+    4.js <blob>使用new Blob()将一个数组的值串联起来，返回一个blob对象。配合<URL>使用，创建该blob对象的url引用，实现下载功能。
+         <URL>使用URL.createObjectURL(obj)创建一个指向该obj的url，可以提供给<a>超链接的href使用。
+    5.js 事件触发，直接使用元素对象的.事件()触发。例如 a_link.click()触发超链接的点击事件。
+    6.在记录一下需要注意的东西，之前好像也写过：使用.addEventListener()绑定的事件处理函数，其this指针指向该元素的object，谨记。
+    别的没了，今天晚上吃的好撑。。。
