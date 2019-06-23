@@ -40,4 +40,4 @@
 + [6-20 markdown 列表 :beginner: js int->u_int int<->bool html .disablle/value属性](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-06-20_23.02_Thursday)
 + [6-21 strtok and strtor_r(可重入)](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-06-21_23.54_Friday)
 + [6-22 思考一下地址十六进制的转换](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-06-22_23.58_Saturday)
-+ [6-23 周末不加班了 Nice day](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-06-23_00.00_Sunday)
++ [6-23 文件的下载和上传 css <fieldset>和<legend>相关 html <a>.download属性和<input type="file">元素以及相关事件 js <Blob><FileReader><URL>相关 谨记addEventListener()  Nice day](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-06-23_22.08_Sunday)
