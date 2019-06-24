@@ -1,0 +1,27 @@
+# This document records daily work and other log infomation.
+
+2019/6/25 00.00 Tuesday
+
+.WORK_PLAN
+    验证完成模块：port、stp、lldp、mirror；待验证模块：garp；未实现后台模块：mac、trunk、
+    1.验证garp模块。marror也要再看一下吧。
+    2.看一看添加trunk模块后台处理接口，mac部分的在之后吧。
+    其他的没有了，难点还是在trunk和mac这把，本身功能做的就不好。
+  
+.STUDY_PLAN
+    1.<8.30-8.50><Linux系统高级编程.PDF> by my phone.
+    2.<12.30-13.00>看一下指针相关的知识点吧，特别是字符串数组、二位数组、函数指针，这三个记录一下，加深自己的知识点。
+    3.<13.00-14.00>sleep
+    4.<15.00-18.00>学习强国文章、视频学习。
+    5.<18.00-20.30>根据work完成情况，未完成则继续work，完成则查看别人的md文件，或者看留言板相关的内容，发现了一个叫KindEditor的东西是js。
+    6.<21.30-22.00>小崽子视频
+    7.<22.30-23.00>在家记录一天的completion和summary，以及新一天plan，提交至github。
+    8.<23.10-24.00>如果想玩的话，LOL和虎牙。不想玩就洗洗上床玩会儿手机。也没啥电影看。
+    9.<24.00-01.00>玩或者睡觉。
+    除学习任务，其他时间点可能不太会变，晚上时间可能不准，但是7必须要做，其他娱乐可自由安排一些。
+    
+.WORK_COMPLETION
+    
+.STUDY_COMPLETION
+    
+.SUMMARY
