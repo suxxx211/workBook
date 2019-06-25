@@ -31,8 +31,9 @@
     - ~~考虑要不要把record也使用markdown来写，看起来个人能够好看一些。可以  (md文件的raw显示不太好看暂时弃用)~~
     
     - 这些弄完后，还考虑vue.js和复习c++相关知识。在晚上留言板之后吧，课表优先级较低。要不在留言板中引入vue.js吧，这样两个都学习了，好就这样。
+        * 应该引入用户注册和登录功能
     
-    - c语言字符串数组、二维数组、函数指针相关硬核知识点巩固。
+    - ~~c语言字符串数组、二维数组、函数指针相关硬核知识点巩固。(记下来了)~~
 
 ## 他强由他强 清风拂山冈
 
@@ -48,4 +49,5 @@
 + [6-22 思考一下地址十六进制的转换](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-06-22_23.58_Saturday)
 + [6-23 文件的下载和上传 css \<fieldset\>和\<legend\>相关 html \<a\>.download属性和\<input type="file"\>元素以及相关事件 js \<Blob\>\<FileReader\>\<URL\>相关 谨记addEventListener()  Nice day](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-06-23_22.08_Sunday)
 + [6-24 Linux \<grep\>命令 \<mmap\>映射区同步方法 js string.trim()方法去空格和行终止符 typeof(var)获取变量类型 jQuery $.inArray() c 字符串数组传参](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-06-24_23.00_Monday)
-+ [6-25 Good day](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-06-25_00.00_Tuesday)
++ [6-25 很屌的C指针数组、字符串数组传参、函数指针、函数指针数组 理解不了没关系 先记住怎么用](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-06-25_23.24_Tuesday)
++ [6-26 Good day](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-06-26_00.00_Wednesday)
