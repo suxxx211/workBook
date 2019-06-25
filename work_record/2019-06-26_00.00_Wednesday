@@ -1,0 +1,27 @@
+# This document records daily work and other log infomation.
+
+2019/6/26 00.00 Wednesday
+
+.WORK_PLAN
+    验证完成模块：port、stp、lldp、mirror、garp；待验证模块：mac的删除静态mac；未实现后台模块：mac动态表、trunk功能都不好
+    1.验证mac的删除功能。trunk显示的代码可以在看一下，这个主要牵扯到web，尽量做一下吧。
+    2.之后这周应该要解决问题了，看看解决哪些吧。
+    其他的没有了，难点还是在mac把，要是用自己维护的办法的话，还是有意思的，trunk的话没没法说，主要代码没有去深入的看，什么llag。。给我搞蒙了。
+  
+.STUDY_PLAN
+    1.<8.30-8.50><Linux系统高级编程.PDF> by my phone.
+    2.<12.30-13.00>看一下KindEditor吧，或者看其他人写的readme。
+    3.<13.00-14.00>sleep
+    4.<15.00-18.00>学习强国文章、视频学习。
+    5.<18.00-20.30>根据work完成情况，未完成则继续work，完成则看看登录和用户注册这个东西，留言板也能用。
+    6.<21.30-22.00>小崽子视频
+    7.<22.30-23.00>在家记录一天的completion和summary，以及新一天plan，提交至github。
+    8.<23.10-24.00>如果想玩的话，LOL和虎牙。不想玩就洗洗上床玩会儿手机。也没啥电影看。
+    9.<24.00-01.00>玩或者睡觉。
+    除学习任务，其他时间点可能不太会变，晚上时间可能不准，但是7必须要做，其他娱乐可自由安排一些。
+    
+.WORK_COMPLETION
+    
+.STUDY_COMPLETION
+    
+.SUMMARY
