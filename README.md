@@ -23,6 +23,8 @@
 
     - :dart: 做一个类似留言板功能的web，提上日程，晚上的时候琢磨一下。一个文本框，一个用于显示的区域。两个元素，还想引入vue.js，慢慢来吧，第一个版本先不用。 2019/6/20 23.54 by suxxx
         * :dart: 发现一个KindEditor是js编辑器，应该能用到。
+        * :dart: iframe也可以用一下。现在有个问题就是没有服务器，不能使用后台处理功能。
+        * 应该引入用户注册和登录功能
     
     - :heart: 做一个丽丽的课表显示web，可以导入全校课表数据，解析显示出丽丽的排课，需要一个导入按钮，一个显示列表。还需要考虑导入的数据。剩下的就是web文件传输的实现了。 2019/6/20 23.54 by suxxx
     
@@ -31,7 +33,6 @@
     - ~~考虑要不要把record也使用markdown来写，看起来个人能够好看一些。可以  (md文件的raw显示不太好看暂时弃用)~~
     
     - 这些弄完后，还考虑vue.js和复习c++相关知识。在晚上留言板之后吧，课表优先级较低。要不在留言板中引入vue.js吧，这样两个都学习了，好就这样。
-        * 应该引入用户注册和登录功能
     
     - ~~c语言字符串数组、二维数组、函数指针相关硬核知识点巩固。(记下来了)~~
 
@@ -50,4 +51,5 @@
 + [6-23 文件的下载和上传 css \<fieldset\>和\<legend\>相关 html \<a\>.download属性和\<input type="file"\>元素以及相关事件 js \<Blob\>\<FileReader\>\<URL\>相关 谨记addEventListener()  Nice day](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-06-23_22.08_Sunday)
 + [6-24 Linux \<grep\>命令 \<mmap\>映射区同步方法 js string.trim()方法去空格和行终止符 typeof(var)获取变量类型 jQuery $.inArray() c 字符串数组传参](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-06-24_23.00_Monday)
 + [6-25 很屌的C指针数组、字符串数组传参、函数指针、函数指针数组 理解不了没关系 先记住怎么用](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-06-25_23.24_Tuesday)
-+ [6-26 Good day](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-06-26_00.00_Wednesday)
++ [6-26 html \<iframe\>页面处理 C snprintf相关api的strlen段错误](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-06-26_21.50_Wednesday)
++ [6-27 Good day](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-06-27_00.00_Thursday)
