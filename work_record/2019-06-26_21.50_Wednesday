@@ -30,12 +30,15 @@
     2.没看，中午吃吃饭回来，睡觉了。
     3.Finish
     4.Finish
-    5.继续工作，看了iframe相关的东西。
+    5.继续工作，看了iframe相关的东西，看了点别人的readme。
     6.Finish 
+    7.Finish
     
 .SUMMARY
     1.snprintf 导致的段错误，sprintf(buf, size, "%s", 15);这样会导致段错误，堆栈打印信息为：/lib/libc.so.6(strlen+0x10)[0xb6dad4a0] strlen出错。
     2.html <iframe> 一页分多个区域 .src属性指向一个链接，可以将一个页面分成多个iframe，src指向每个iframe的url，例如一个状态栏，左侧一个导航栏，中间显示内容，现在的web框架就是，最顶层页面为index.html，内部有3个iframe，一个端口状态，一个侧边导航栏，一个主页面显示。调用关系是这样：
     auth -> index -> { ->top, ->nav, ->main } 首先auth验证完成后调用top.location.replace("index.htm")将top定向到index.htm，之后index为新的top。并且调用后浏览器的返回按钮不能点击了，说明之前的页面不能在回去了。
     top表示最顶层iframe，self表示自身iframe，parent表示当前iframe的父iframe，也就是上一级。使用方法：top.iframename.location.方法()，或self.location.方法()，parent.location.方法()
-    3.vue.js 自定义组件
+    3.vue.js 自定义组件还得再学习一下。
+    主要看了这个iframe分页这个东西，感觉挺好的，可以用，但是应该先完成留言板的主体功能，先把登录搞一下吧。今天整体其实只完成了trunk的web前端修改，数据传递，后台处理接口，mac动态未完成，loadbalance也没完成，这是老问题了，这周要完成，起码要完成动态mac的显示吧。
+    其他的话，今晚上看到了一个文章，为什么越加班越穷。。确实说的也有道理。拒绝无效加班，但是加班也是为了餐补。。所以以后晚上在加班的时间也好好利用一下吧，没事干就看看学习的东西，然后到八点多好走，别在那傻坐着，ok就这样决定了。
