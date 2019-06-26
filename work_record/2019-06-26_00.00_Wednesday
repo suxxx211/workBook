@@ -1,6 +1,6 @@
 # This document records daily work and other log infomation.
 
-2019/6/26 00.00 Wednesday
+2019/6/26 21.50 Wednesday
 
 .WORK_PLAN
     验证完成模块：port、stp、lldp、mirror、garp；待验证模块：mac的删除静态mac；未实现后台模块：mac动态表、trunk功能都不好
@@ -21,7 +21,16 @@
     除学习任务，其他时间点可能不太会变，晚上时间可能不准，但是7必须要做，其他娱乐可自由安排一些。
     
 .WORK_COMPLETION
+    1.删除忘了验证了，打自己一下。完成了trunk端口添加删除。合入版本库。
+    2.mac的问题没有解决，剩下的问题mac的保存，trunk的loadbalance不会负载。镜像做的是个渣渣，gvrp有些接口没有实现。
+    今天做的不多。
     
 .STUDY_COMPLETION
+    1.Finish
+    2.没看，中午吃吃饭回来，睡觉了。
+    3.Finish
+    4.Finish
+    5.继续工作，看了iframe相关的东西。
+    6.Finish 
     
 .SUMMARY
