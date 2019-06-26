@@ -25,3 +25,8 @@
 .STUDY_COMPLETION
     
 .SUMMARY
+    1.snprintf 导致的段错误，sprintf(buf, size, "%s", 15);这样会导致段错误，堆栈打印信息为：/lib/libc.so.6(strlen+0x10)[0xb6dad4a0] strlen出错。
+    2.html <iframe> 一页分多个区域 .src属性指向一个链接，可以将一个页面分成多个iframe，src指向每个iframe的url，例如一个状态栏，左侧一个导航栏，中间显示内容，现在的web框架就是，最顶层页面为index.html，内部有3个iframe，一个端口状态，一个侧边导航栏，一个主页面显示。调用关系是这样：
+    auth -> index -> { ->top, ->nav, ->main } 首先auth验证完成后调用top.location.replace("index.htm")将top定向到index.htm，之后index为新的top。并且调用后浏览器的返回按钮不能点击了，说明之前的页面不能在回去了。
+    top表示最顶层iframe，self表示自身iframe，parent表示当前iframe的父iframe，也就是上一级。使用方法：top.iframename.location.方法()，或self.location.方法()，parent.location.方法()
+    3.vue.js 自定义组件
