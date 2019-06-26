@@ -1,0 +1,27 @@
+# This document records daily work and other log infomation.
+
+2019/6/27 00.00 Thursday
+
+.WORK_PLAN
+    验证完成模块：port、stp、lldp、mirror、garp、trunk端口显示、添加删除；待验证模块：mac的删除静态mac；未实现后台模块：mac动态表、trunk的loadbalance，镜像的优化。
+    1.验证mac的删除功能。
+    2.mac动态表的维护实现。
+    2.trunk的loadbalance。看情况吧这个。估计够呛
+  
+.STUDY_PLAN
+    1.<8.30-8.50><Linux系统高级编程.PDF> by my phone.
+    2.<12.30-13.00>看一下KindEditor吧，也要用。
+    3.<13.00-14.00>sleep
+    4.<15.00-18.00>学习强国文章、视频学习。
+    5.<18.00-20.30>根据work完成情况，未完成则继续work，再看看vue里面的模板吧，然后在考虑这个iframe，留言板也能用。
+    6.<21.30-22.00>小崽子视频
+    7.<22.30-23.00>在家记录一天的completion和summary，以及新一天plan，提交至github。
+    8.<23.10-24.00>如果想玩的话，LOL和虎牙。不想玩就洗洗上床玩会儿手机。也没啥电影看。
+    9.<24.00-01.00>玩或者睡觉。
+    除学习任务，其他时间点可能不太会变，晚上时间可能不准，但是7必须要做，其他娱乐可自由安排一些。
+    
+.WORK_COMPLETION
+    
+.STUDY_COMPLETION
+    
+.SUMMARY
