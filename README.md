@@ -52,4 +52,5 @@
 + [6-24 Linux \<grep\>命令 \<mmap\>映射区同步方法 js string.trim()方法去空格和行终止符 typeof(var)获取变量类型 jQuery $.inArray() c 字符串数组传参](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-06-24_23.00_Monday)
 + [6-25 很屌的C指针数组、字符串数组传参、函数指针、函数指针数组 理解不了没关系 先记住怎么用](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-06-25_23.24_Tuesday)
 + [6-26 html \<iframe\>页面处理 C snprintf相关api的strlen段错误](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-06-26_21.50_Wednesday)
-+ [6-27 Good day](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-06-27_00.00_Thursday)
++ [6-27 html .slot 和 vue 的组件混合使用](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-06-27_22.54_Thursday)
++ [6-27 Good day](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-06-28_00.00_Friday)
