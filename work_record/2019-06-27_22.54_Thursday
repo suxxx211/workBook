@@ -1,6 +1,6 @@
 # This document records daily work and other log infomation.
 
-2019/6/27 00.00 Thursday
+2019/6/27 22.54 Thursday
 
 .WORK_PLAN
     验证完成模块：port、stp、lldp、mirror、garp、trunk端口显示、添加删除；待验证模块：mac的删除静态mac；未实现后台模块：mac动态表、trunk的loadbalance，镜像的优化。
@@ -24,11 +24,27 @@
     除学习任务，其他时间点可能不太会变，晚上时间可能不准，但是7必须要做，其他娱乐可自由安排一些。
     
 .WORK_COMPLETION
+    1.晚上9点多时候验证的，发现数据最后删除的vlanid为0，是一个bug。问题可能出在1.web前端传递出错。通过console打印调试。2.appDemo解析出错，查看分析mac_cli.c的delmac相关代码。
+    2.未实现
+    3.未实现
+    4.完成，之后可以考虑加入参数。boot下有一个宏会控制是否解析字符串中的$，这个也需要注意一下。
     
 .STUDY_COMPLETION
+    1.看了对io调度的描述。
+    2.简单的看了一下，感觉文档写的挺好的，可以直接调用，适合快速开发的使用。不过问题还是在用的时候才能暴露出来。
+    3.Finish
+    4.Finish
+    5.Finish 看了vue里面的组件，不叫模板，还有就是html的slot这个东西在vue的组件中也有很大的作用。
+    6.Finish
+    7.Finish
     
 .SUMMARY
     1.perl脚本中的打印，主要分析了一下boot的build.pl中的流程，用到了perl print，栗子：print $path, $cross; print "hello", $root; print "call %func \n";类似这种，看来这种脚本功能还是挺强大的。
     2.vue.js <component>组件中的props用于参数传递，data返回值是一个函数，暂时感觉data意义不太大，昨天晚上遇到的问题，在组件调用中间插入代码<my-dialog>其他html语句</my-dialog>，为了让这样的html语句生效，要使用html的slot这个东西插槽。需要调用时将html语句使用slot元素或属性包裹起来(多个slot的话，每个用name区分)。定义组件是也一样，在.template属性中在引用的地方用slot包裹起来，渲染的时候，就会把对应namedeslot做替换。
     3.大概看了KindEditor，感觉确实是个好东西，晚上回去再看看，文档写的挺好的，看看就知道怎么用。
-    4.学习了uboot的命令调用关系，这个好看，代码也不复杂，添加了几条命令。但是还是搞不懂那个板级相关的那些文件。。
+    4.学习了uboot的命令调用关系，这个好看，代码也不复杂，添加了几条命令。但是还是搞不懂那个板级相关的那些文件。。代码的话不难，就是调用了runcommand，或者get、set env相关的东西，只算是迈出了修改boot的第一步吧。
+    今天首先看了vue的组件中间插入代码，发现用到了slot这个东西，叫插槽。回来试了一下确实好用，又学会一个东西。然后中午看了KindEditor，文档中有基础的调用，应该直接拿来就能用，一会试一下。其他的话，就是对boot添加命令，本事也并不难，一个宏，一个回调就可以了，当然boot的重点也不在这里，大致明白了中间的调用关系，首先调用的readline读取命令行数据，这个怎么读取，是可以去看一下的，因为你用的是串口，他肯定从串口那去取的数据，这个可以在分析一下。其他的就没有，向新学的前端的东西还是要动手去试试，才知道是怎么回事，拷贝了两周了，只是大概知道怎么用了，让自己动手写才知道有好多问题，不过也正是这样才能记得牢，理解的深刻。好了今天就这吧。
+    
+    
+    
+    
