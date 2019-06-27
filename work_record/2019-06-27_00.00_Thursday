@@ -6,7 +6,10 @@
     验证完成模块：port、stp、lldp、mirror、garp、trunk端口显示、添加删除；待验证模块：mac的删除静态mac；未实现后台模块：mac动态表、trunk的loadbalance，镜像的优化。
     1.验证mac的删除功能。
     2.mac动态表的维护实现。
-    2.trunk的loadbalance。看情况吧这个。估计够呛
+    3.trunk的loadbalance。看情况吧这个。估计够呛
+    更新：
+    2、3都将延后。
+    4.增加boot下升级命令，看看怎么实现的，并且做好记录。
   
 .STUDY_PLAN
     1.<8.30-8.50><Linux系统高级编程.PDF> by my phone.
@@ -25,3 +28,7 @@
 .STUDY_COMPLETION
     
 .SUMMARY
+    1.perl脚本中的打印，主要分析了一下boot的build.pl中的流程，用到了perl print，栗子：print $path, $cross; print "hello", $root; print "call %func \n";类似这种，看来这种脚本功能还是挺强大的。
+    2.vue.js <component>组件中的props用于参数传递，data返回值是一个函数，暂时感觉data意义不太大，昨天晚上遇到的问题，在组件调用中间插入代码<my-dialog>其他html语句</my-dialog>，为了让这样的html语句生效，要使用html的slot这个东西插槽。需要调用时将html语句使用slot元素或属性包裹起来(多个slot的话，每个用name区分)。定义组件是也一样，在.template属性中在引用的地方用slot包裹起来，渲染的时候，就会把对应namedeslot做替换。
+    3.大概看了KindEditor，感觉确实是个好东西，晚上回去再看看，文档写的挺好的，看看就知道怎么用。
+    4.学习了uboot的命令调用关系，这个好看，代码也不复杂，添加了几条命令。但是还是搞不懂那个板级相关的那些文件。。
