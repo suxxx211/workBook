@@ -3,8 +3,6 @@
 <div id="img_test_1" align="center">
     <img src="https://wx3.sinaimg.cn/mw1024/005KLw4Vly1g46ygmohz3j30h70gt0w4.jpg" hight="300px" width="300px" alt="壮壮女神"></img>
     <br />
-[![GO 加个按钮](https://travis-ci.org/crossoverJie/JCSprout.svg?branch=master)](https://www.baidu.com)
-[![Build Status](https://travis-ci.org/crossoverJie/JCSprout.svg?branch=master)](https://travis-ci.org/crossoverJie/JCSprout)
 </div>
 
 ### Previous record
@@ -40,6 +38,8 @@
     - ~~c语言字符串数组、二维数组、函数指针相关硬核知识点巩固。(记下来了)~~
     
     - perl和makefile脚本的学习提上日程。
+    
+![Big Flag](https://i.52112.com/icon/jpg/256/20190515/39657/1896743.jpg)
 
 ## 他强由他强 清风拂山冈
 
