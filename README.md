@@ -3,8 +3,8 @@
 <div id="img_test_1" align="center">
     <img src="https://wx3.sinaimg.cn/mw1024/005KLw4Vly1g46ygmohz3j30h70gt0w4.jpg" hight="300px" width="300px" alt="壮壮女神"></img>
     <br />
-![GO 加个按钮](https://travis-ci.org/crossoverJie/JCSprout.svg?branch=master)
-    
+[![GO 加个按钮](https://travis-ci.org/crossoverJie/JCSprout.svg?branch=master)](https://www.baidu.com)
+[![Build Status](https://travis-ci.org/crossoverJie/JCSprout.svg?branch=master)](https://travis-ci.org/crossoverJie/JCSprout)
 </div>
 
 ### Previous record
