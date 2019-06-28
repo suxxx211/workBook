@@ -2,6 +2,9 @@
 
 <div id="img_test_1" align="center">
     <img src="https://wx3.sinaimg.cn/mw1024/005KLw4Vly1g46ygmohz3j30h70gt0w4.jpg" hight="300px" width="300px" alt="壮壮女神"></img>
+    <br />
+![GO 加个按钮](https://travis-ci.org/crossoverJie/JCSprout.svg?branch=master)
+    
 </div>
 
 ### Previous record
@@ -23,7 +26,7 @@
 
     - :dart: 做一个类似留言板功能的web，提上日程，晚上的时候琢磨一下。一个文本框，一个用于显示的区域。两个元素，还想引入vue.js，慢慢来吧，第一个版本先不用。 2019/6/20 23.54 by suxxx
         * :dart: 发现一个KindEditor是js编辑器，应该能用到。
-        * :dart: iframe也可以用一下。现在有个问题就是没有服务器，不能使用后台处理功能。
+        * :dart: iframe也可以用一下,对于iframe显示不完全出现滚动条的问题，可以参考L3处理方式。现在有个问题就是没有服务器，不能使用后台处理功能。
         * 应该引入用户注册和登录功能
     
     - :heart: 做一个丽丽的课表显示web，可以导入全校课表数据，解析显示出丽丽的排课，需要一个导入按钮，一个显示列表。还需要考虑导入的数据。剩下的就是web文件传输的实现了。 2019/6/20 23.54 by suxxx
@@ -55,4 +58,5 @@
 + [6-25 很屌的C指针数组、字符串数组传参、函数指针、函数指针数组 理解不了没关系 先记住怎么用](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-06-25_23.24_Tuesday)
 + [6-26 html \<iframe\>页面处理 C snprintf相关api的strlen段错误](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-06-26_21.50_Wednesday)
 + [6-27 html .slot 和 vue 的组件混合使用](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-06-27_22.54_Thursday)
-+ [6-27 Good day](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-06-28_00.00_Friday)
++ [6-28 vue.js 组件的$(emit)](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-06-28_22.19_Friday)
++ [6-29 周末了](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-06-29_00.00_Saturday)
