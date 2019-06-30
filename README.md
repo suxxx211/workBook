@@ -59,4 +59,5 @@
 + [6-26 html \<iframe\>页面处理 C snprintf相关api的strlen段错误](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-06-26_21.50_Wednesday)
 + [6-27 html .slot 和 vue 的组件混合使用](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-06-27_22.54_Thursday)
 + [6-28 vue.js 组件的$(emit)](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-06-28_22.19_Friday)
-+ [6-29 周末了](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-06-29_00.00_Saturday)
++ [6-29 smb访问软连接文件 linux 创建软连接 gcc 使用静态库](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-06-29_21.16_Saturday)
++ [7-1 新的七月 新的一周 新的一天](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-07-01_00.00_Monday)
