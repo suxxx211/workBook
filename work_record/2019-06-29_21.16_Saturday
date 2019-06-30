@@ -1,0 +1,31 @@
+# This document records daily work and other log infomation.
+
+2019/6/29 21.16 Saturday
+
+.WORK_PLAN
+    可以休息喽。
+    
+.STUDY_PLAN
+    1.<-12.00>sleep
+    2.学习强国文章、视频学习。
+    可选任务：
+    3.留言板的iframe调试。下载调试工具，可以用vue提供的。还有加入编辑器。
+    
+.WORK_COMPLETION
+    
+.STUDY_COMPLETION
+    1.Finish
+    2.Finish
+    3.iframe添加完成了。理解的七七八八了。
+    4.搭建虚拟机server环境，调试fastcgi
+    
+.SUMMARY
+    1.windows server usr中/就是顶层服务目录：inentpub/wwwroot 如果不加/就是和当前文件在同一级目录下。
+    2.window.top <==> top 都是指向顶层页面的信息。
+    3.ubuntu lighttpd stop: /etc/init.d/lighttpd stop 或者 systemctl stop lighttpd 或者 service lighttpd stop
+	    配置文件: /etc/lighttpd/lighttpd.conf
+	4.允许smb访问软连接文件:  follow symlinks = yes
+						    wide links = yes
+						    unix extensions = no
+    5.创建软连接 ln -s 原目标 新建连接目标
+    6.静态库的使用 gcc echo.c -o web_fcgi -L../libfcgi -lfcgi -static
