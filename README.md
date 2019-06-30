@@ -5,9 +5,9 @@
     <br />
 </div>
 
-|:hearts: |:hearts: |:hearts: |:hearts: |
-| :---: | :---: | :---: | :---: | :---: |
-|1|2|3|4|5|
+| :hearts: | :hearts: | :hearts: | :hearts: |
+| :----: | :----: | :----: | :----: |
+|1|2|3|4|
 
 ### Previous record
 + The first one
