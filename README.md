@@ -45,6 +45,8 @@
     
     - perl和makefile脚本的学习提上日程。
 
+    - :fire:根据项目学习makefil.am相关自动化工具。
+
 大旗子![Big Flag](https://i.52112.com/icon/jpg/256/20190515/39657/1896743.jpg)
 
 ## 他强由他强 清风拂山冈
