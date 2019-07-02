@@ -67,4 +67,5 @@
 + [6-28 vue.js 组件的$(emit)](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-06-28_22.19_Friday)
 + [6-29 smb访问软连接文件 linux 创建软连接 gcc 使用静态库](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-06-29_21.16_Saturday)
 + [7-1 新的七月 新的一周 新的一天 packet 收包以及锁](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-07-01_23.34_Monday)
-+ [7-2 新的一天](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-07-02_00.00_Tuesday)
++ [7-2 RECORD](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-07-02_22.53_Tuesday)
++ [7-2 新的一天](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-07-03_00.00_Wednesday)
