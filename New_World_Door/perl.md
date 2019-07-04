@@ -1,10 +1,10 @@
 ### New World Door  #perl
 
-+ 命令行: 使用参数-e 
-    语法：perl -e LineProgram
-    `perl -e 'print "Hello World\n";'`
-+ hello_world.pl
-    顺序执行，行以分号结尾。
++ 命令行: 使用参数-e  
+    语法：perl -e LineProgram  
+    `perl -e 'print "Hello World\n";'`  
++ hello_world.pl  
+    顺序执行，行以分号结尾。  
 	```
     #!/usr/bin/perl
 	print "Hello World!\n";  <=等价于=> print("Hello World\n"); 
@@ -42,6 +42,6 @@
      ```
 		
 + 特殊字符：
-	`__FILE__ 文件名`
-	`__LINE__ 行号`
-	`__PACKAGE__ 包名`
+	`__FILE__ 文件名`  
+	`__LINE__ 行号`  
+	`__PACKAGE__ 包名`  
