@@ -30,3 +30,8 @@
     
 .SUMMARY
     心情不好 不想写
+    1.Linux pthread linux中线程有自己的pid，书中说pthread_create调用了clone创建了子进程，在linux中线程是一种特殊的进程。所以每个线程有自己的pid，可以通过gettid()但是这个函数在glibc中并没有导出，所以直接使用底层系统调用来完成，下面是一个例子：
+    获取线程的pid: printf("Pthread pid id %ld\n", syscall(SYS_gettid));
+    包含头文件：#include <sys/syscall.h>
+    也可以对他进行封装。
+    2.linux top命令查看线程 top -H -p <进程pid>
