@@ -46,6 +46,8 @@
     - perl和makefile脚本的学习提上日程。
 
     - :fire:根据项目学习makefil.am相关自动化工具。
+    
+    - 继续搞搞python的串口工具。
 
 大旗子![Big Flag](https://i.52112.com/icon/jpg/256/20190515/39657/1896743.jpg)
 
@@ -71,4 +73,4 @@
 + [7-1 新的七月 新的一周 新的一天 packet 收包以及锁](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-07-01_23.34_Monday)
 + [7-2 RECORD](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-07-02_22.53_Tuesday)
 + [7-2 linux 线程获取tpid 线程同步之条件变量cond](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-07-03_22.12_Wednesday)
-+ [7-2 新的一天](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-07-05_00.00_Friday)
++ [7-2 新的一天 没有重要的知识点 先占位](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-07-05_23.33_Friday)
