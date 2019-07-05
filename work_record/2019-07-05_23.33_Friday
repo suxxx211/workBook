@@ -1,6 +1,6 @@
 # This document records daily work and other log infomation.
 
-2019/7/5 00.00 Friday
+2019/7/5 23.33 Friday
 
 .WORK_PLAN
     1.继续调试cpu占用率高，应该能调好，之后还要验证一下影响到的线程。
@@ -20,8 +20,26 @@
     除学习任务，其他时间点可能不太会变，晚上时间可能不准，但是7必须要做，其他娱乐可自由安排一些。
     
 .WORK_COMPLETION
+    1.完成，修改了cried、garp、frame、等，关键还是线程锁。
+    2.没有
     
 .STUDY_COMPLETION
-    
+    1.F,看了线程退出。
+    2.N
+    3.N
+    4.F
+    5.N
+    6.F
+    7.F
     
 .SUMMARY
+    1.while循环是很占用cpu的，最好在线程中加入唤醒机制，或者sleep也会让出cpu
+    2.端口的access\trunk\hybrid模式
+    access模式：依据pvid判断报文tag。相同接收，不同丢弃。如果本来就没有，打入pvid的vlan。出方向，全部剥离vlan。
+    trunk和hybrid模式：根据端口所属vlanid判断报文tag，相关接收，不同丢弃。如果本来就没有，打入pvid的vlan。区别在出方向：
+    trunk的出方向，根据pvid判断，如果相关剥离，不同保留。
+    hybrid的出方向，是可以配置的，要不要剥离。
+    可以开一个md记录这些，vlan还是很值得学习的。书还是要继续看的，笔记也是要做的，积累一点点，时间久了就能成长起来。加油。
+    
+    
+    
