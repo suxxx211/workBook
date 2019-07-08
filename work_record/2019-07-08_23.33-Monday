@@ -1,6 +1,6 @@
 # This document records daily work and other log infomation.
 
-2019/7/8 00.00 Monday
+2019/7/8 23.33 Monday
 
 .WORK_PLAN
     1.验证一下cpu占用率高的修改情况，主要涉及到garp(锁)、firmware_init(锁)、psec_init(sleep)、critd_module_init(注释掉)
@@ -31,4 +31,6 @@
                 -R/r：递归处理，将指定目录下的所有文件与子目录一并处理
                 主要需要记得是cp一个目录下面的文件时用-a: cp -a libs/ ~/link/ 将libs下的所有文件拷贝到link目录下，拷贝不会覆盖源目录下的内容。这一句是关键。
     2.configure 中的 host参数指定交叉编译中的目标主机运行环境例如：host=arm-linux 或 host=ppc-linux ...
+    3.分析了L3中web的session和auth的过程。
+    心得：看代码主要就是先要吧主要的全局数据结构标记出来，下回记得先把结构在本本上画框图出来。
     
