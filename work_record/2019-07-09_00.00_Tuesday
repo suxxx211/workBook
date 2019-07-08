@@ -1,0 +1,29 @@
+# This document records daily work and other log infomation.
+
+2019/7/8 23.33 Tuesday
+
+.WORK_PLAN
+    1.验证一下cpu占用率高的修改情况，主要涉及到garp(锁)、firmware_init(锁)、psec_init(sleep)、critd_module_init(注释掉)
+    2.查找mac保存的方法，之前是用树存储的。
+    目前虚拟内存的使用率也是很高。
+    
+.STUDY_PLAN
+    1.<8.30-8.50><unix环境编程.PDF> by my phone.
+    2.<12.30-13.00>学习linux设备树文件相关。
+    3.<13.00-14.00>sleep
+    4.<15.00-18.00>学习强国文章、视频学习。
+    5.<18.00-20.30>根据work完成情况，未完成则继续work。解决昨天晚上写的Q1-3问题，并记录
+    6.<21.30-22.00>小崽子视频
+    7.<22.30-23.00>在家记录一天的completion和summary，以及新一天plan，提交至github。
+    8.<23.10-24.00>如果想玩的话，LOL和虎牙。不想玩就洗洗上床玩会儿手机。也没啥电影看。
+    9.<24.00-01.00>玩或者睡觉。
+    除学习任务，其他时间点可能不太会变，晚上时间可能不准，但是7必须要做，其他娱乐可自由安排一些。
+    
+.WORK_COMPLETION
+    
+.STUDY_COMPLETION
+    1.昨天看了dup复制描述符。
+    
+    
+.SUMMARY
+  
