@@ -1,6 +1,6 @@
  This document records daily work and other log infomation.
 
-2019/7/6 00.00 Saturday
+2019/7/6 15.22 Saturday
 
 .WORK_PLAN
     NO WORK
@@ -19,3 +19,5 @@
 .STUDY_COMPLETION
     
 .SUMMARY
+    1.学习了fastcgi的源码，主要就有accept这一个函数。L3中使用的是app这个文件，还有一个io的文件，是在app的基础上做了封装。
+    2.学习了cookie的设置，在fastcgi中。
