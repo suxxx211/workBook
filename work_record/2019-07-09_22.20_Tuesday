@@ -1,6 +1,6 @@
 # This document records daily work and other log infomation.
 
-2019/7/8 23.33 Tuesday
+2019/7/9 22.20 Tuesday
 
 .WORK_PLAN
     1.验证一下cpu占用率高的修改情况，主要涉及到garp(锁)、firmware_init(锁)、psec_init(sleep)、critd_module_init(注释掉)
@@ -20,9 +20,17 @@
     除学习任务，其他时间点可能不太会变，晚上时间可能不准，但是7必须要做，其他娱乐可自由安排一些。
     
 .WORK_COMPLETION
+    1.没有验证，不想测试。
+    2.没有保存，但是发现之前写的可以用了，可能是之前cpu占用率一直太高了，各方面处理都受影响了。现在延时400ms*10还是有点不够用，但是状态最终会变成true，也就是触发的这个事件完成了，这个明天还要再看一下。
     
 .STUDY_COMPLETION
-    1.昨天看了dup复制描述符。
+    1.看了一点进程环境，但是太瞌睡了，就睡了一会。
+    2.没有学习。
+    3.Finish
+    4.Finish
+    5.Q1-3解决了。
+    6.Finish
+    7.Finish
     
 .SUMMARY
     对于昨天l3web代码的疑问解答记录：
@@ -36,7 +44,7 @@
     一个小的应用，在程序中可能会创建临时文件，我们在打开临时文件之后，马上调用remove，就能保证该临时文件一定会被删除，即使进程在之后的处理过程中崩溃，而且因为文件已经open，所以还可以进行读取或其他操作，直到close或进程崩溃。
     2.linux fprintf 格式化输出到文件流中 fgets 从流中读取一行 fputs 输出一行到流中。
         这里的流，对于文件来说就是FILE *指针，特殊的系统相关的：stdio标准输入流，stdout标准输出流，stderr标准出错流(默认打印到终端)。
-    
+    3.小明问我pthread_create传多个参数的问题，我还是认为需要malloc，要不然传过去了，这边给释放了，不是就该越界了么，对的。
     
     
     
