@@ -75,4 +75,5 @@
 + [7-3 linux 线程获取tpid 线程同步之条件变量cond](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-07-03_22.12_Wednesday)
 + [7-5 端口模式 access|trunk|hybrid](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-07-05_23.33_Friday)
 + [7-8 linux cp -a 和 dup相关api](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-07-08_23.33_Monday)
-+ [7-9 新的一天](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-07-09_00.00_Tuesday)
++ [7-9 linux remove fprintf相关api L3web Q1-3疑问解答](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-07-09_22.20_Tuesday)
++ [7-10 新的一天](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-07-10_00.00_Wednesday)
