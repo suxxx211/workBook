@@ -24,6 +24,11 @@
 .STUDY_COMPLETION
     1.昨天看了dup复制描述符。
     
-    
 .SUMMARY
-  
+    对于昨天l3web代码的疑问解答记录：
+    Q1：cookie在那一步骤设置
+    答：fcgi只维护了cookie中的sessionid、maxage等，web前端维护username、user_type等。fcgi的cook设置在session处理中刷新session时候设置sessionid和maxage。web前端在login页面设置lang、color信息，在index页面设置username、user_type信息。
+    Q2：sessionlist中的session空间问题。
+    答：问题本身就有问题，serverlist为fcgi存储session结构的全局结构，httpd过来的数据存储在req变量中，在session阶段，创建一个新的sessionid，会将req的session指针指向新创建的session，该session保存在sessinlist全局结构中。
+    Q3：退出后cookie中仍有username、user_type。
+    答：可参考Q1，有web前端控制，在logout之后没有清除cookie，可能和浏览器有关。
