@@ -1,6 +1,6 @@
 # This document records daily work and other log infomation.
 
-2019/7/10 00.00 Wednesday
+2019/7/10 23.54 Wednesday
 
 .WORK_PLAN
     1.验证一下cpu占用率高的修改情况，主要涉及到garp(锁)、firmware_init(锁)、psec_init(sleep)、critd_module_init(注释掉)
