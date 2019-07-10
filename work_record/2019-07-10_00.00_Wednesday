@@ -25,3 +25,12 @@
 .STUDY_COMPLETION
     
 .SUMMARY
+    1.linux 8中进程退出方式：
+        正常退出：1.main函数return 2.调用了exit 3.调用了_exit或_Exit 4.最后一个线程从启动例程返回 5.最后一个线程调用pthread_exit
+        异常退出：6.调用abort 7.接收到信号 8.最后一个线程对取消请求作出响应
+        2和3的区别：2会执行一些清理动作例如：关闭io、关闭流、冲洗缓冲区等
+        main函数return等价于exit，但是如果pthread中调用exit将导致整个进程的退出。
+    2.linux atexit 进程的main在显式或隐式调用return或exit时，将执行atexit注册的exit handle，一个进程最多注册32个exit handle。并且调用时与注册顺序相反。先注册的后调用。在这些函数执行完成之后才会进行标准io的清理动作。
+    3.c程序的存储空间布局
+     
+
