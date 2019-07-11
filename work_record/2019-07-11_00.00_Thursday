@@ -27,3 +27,14 @@
 .STUDY_COMPLETION
 
 .SUMMARY
+    1.Linux的头文件包含<>与""
+        <>会首先在标准库路径下寻找头文件，找不到在会去指定的用户目录中搜索。-I选项
+        ""会首先在当前目录下查找，找不到再去标准库路径下和指定的用户目录中搜索。
+    2.js前端目前使用到的页面跳转的方法：
+        window.location.href="http://www.dayanmei.com/";
+        window.navigate("top.jsp");
+        window.location.replace("http://www.dayanmei.com");
+        window.history.back(-1);
+    
+    
+    
