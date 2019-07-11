@@ -33,7 +33,7 @@
     5.继续工作，还有聊天。
     6.完成
     7.完成
-    一部分summary没合进来，明天记得合一下。
+    
 .SUMMARY
     1.linux 8中进程退出方式：
         正常退出：1.main函数return 2.调用了exit 3.调用了_exit或_Exit 4.最后一个线程从启动例程返回 5.最后一个线程调用pthread_exit
@@ -42,5 +42,19 @@
         main函数return等价于exit，但是如果pthread中调用exit将导致整个进程的退出。
     2.linux atexit 进程的main在显式或隐式调用return或exit时，将执行atexit注册的exit handle，一个进程最多注册32个exit handle。并且调用时与注册顺序相反。先注册的后调用。在这些函数执行完成之后才会进行标准io的清理动作。
     3.c程序的存储空间布局
+        text：正文段，也叫代码段，存放cup执行机器指令的部分，可共享，但是只读的。
+        data：初始化数据段，存放赋初值的全局变量
+        text和data在程序编译时已经分配了空间。
+        bss：未初始化数据段，存放未赋初值的全局变量，在程序开始执行之前，内核将此段中的数据初始化为0
+        bss段的内容不存放在磁盘上的程序文件中。需要存放的只有text和data段。
+        栈：
+        堆：
+    4.linux pthread mutex 线程锁的警告，不要去重复释放一个未锁定的锁。
+        今天遇到了一个问题，三层代码中的线程主循环的唤醒都使用了cyg_flag_wait去等待，我不知道ecos中是如何实现的，之前经过思考和测试使用线程锁和goto自己实现了一个，一直没有发现问题，但是在cpu使用率降下来之后，可能系统对各线程的调度速度加快，暴露出来一个断言错误：
+        pthread_mutex_lock.c:62: __pthread_mutex_lock: Assertion `mutex->__data.__owner == 0' failed.
+        刚开始以为是自己新加的代码有问题，后来回退验证发现，之前的代码也有问题，只是之前cpu占用率一直很高，出现的概率不，但是问题也一直存在，下面记录问题现象。
+        现象：开启任意一个协议报文上cpu，之后打入该协议报文，发现打一会就会断言异常。
+        问题分析：根据现象判断出在packet模块可能有问题，又是报的锁异常，所以看packet模块的锁，由于packet的tx就没有用，所以问题怀疑还是在rx处，又参考csdn博客：https://blog.csdn.net/luckyapple1028/article/details/51588946 分析出，可能还是rx主循环中的问题，就想出了cyg_flag_wait和setbit这里。
+        初步解决：在cyg_flag_wait和setbits中使用cond条件变量。
      
 
