@@ -1,6 +1,6 @@
 # This document records daily work and other log infomation.
 
-2019/7/11 00.00 Thursday
+2019/7/11 22.43 Thursday
 
 .WORK_PLAN
     1.验证一下cpu占用率高的修改情况，主要涉及到garp(锁)、firmware_init(锁)、psec_init(sleep)、critd_module_init(注释掉)
@@ -23,8 +23,20 @@
     除学习任务，其他时间点可能不太会变，晚上时间可能不准，但是7必须要做，其他娱乐可自由安排一些。
     
 .WORK_COMPLETION
+    1.打了一天的lldp报文，没出现问题，那个锁的问题算是解决了。
+    2.这个没有分析，但是应该都能用。
+    3.提交了
+    4.没有看mirror模块，倒是看了lldp模块，但是修改了isid和全局保存到local_conf，包括配置保存和恢复都是要local。取消了调用msg模块的。
+    lldp模块存在的问题：首先是开机时，没有从flash读取配置文件，或者是读取是失败了，这个明天要看一下，为什么重启后有配置文件，但是lldp的数据都是0.它不会发包我怀疑是lldp模块没有初始化完成，可能还是和msg有关。没发报文，协议栈不会有问题，应该就还是配置没读出来，然后定时器也没启动。明天可以从这两个入手分析。问题不会太大。
     
 .STUDY_COMPLETION
+    1.完成
+    2.未完成
+    3.完成
+    4.完成
+    5.继续work
+    6.完成
+    7.完成
 
 .SUMMARY
     1.Linux的头文件包含<>与""
@@ -35,6 +47,7 @@
         window.navigate("top.jsp");
         window.location.replace("http://www.dayanmei.com");
         window.history.back(-1);
-    
+        注意括号，并不都是等于号，这里。
+    感觉今天挺累的，可能是因为专心看了一天的lldp代码，仍然有问题，但是明天应该能解决，在分析一下，已经看得很仔细了，但是可能还是漏掉了一些隐藏的问题，今天就这样吧，没有学习很多其他的东西，但是有看到一个c语言的跨函数goto。。黑科技了又，不知道linux下支持不，还有开源的malloc的库，支持内存分配检测，挺棒的。可以再看看用一下，然后就是留言板终于步入正轨了，架子搭起来剩下的就是填充了，还有fcgi也是c语言的逻辑，问题不大，还想用数据库呢，可以接上数据库。又能学到新东西了。很棒，加油。
     
     
