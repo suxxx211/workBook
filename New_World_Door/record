@@ -1,0 +1,234 @@
+1.fetch
+
+1.vue组件与调用它的组件的数据信号传递需要在组件中使用$emit()第一个参数为发送的信号，后面可以为传递的参数。带调用端，使用v-on:信号名="处理函数" 来进行事件监听。该信号可以不在组件的props中定义。但是调用端和发送端要一致。
+2.组件的调用，传入的值不是字符串的都要用v-bind来绑定一下。
+遗留问题，iframe子页面老是有滚动条，我们想实现，取消子iframe的滚动条，并且父页面随子iframe的动态调整而调整。
+
+windows http server
+1.usr中/就是顶层服务目录：inentpub/wwwroot 如果不加/就是和当前文件在同一级目录下。
+
+2.window.top <==> top 都是指向顶层页面的信息。
+3.js history.back();然后前一个url页面 .go(-1)与back()相同。
+
+4.ubuntu lighttpd stop: /etc/init.d/lighttpd stop 
+	配置文件: /etc/lighttpd/lighttpd.conf
+	允许访问软连接文件:	follow symlinks = yes
+						wide links = yes
+						unix extensions = no
+
+5.创建软连接 ln -s 原目标 新建连接目标
+
+6.静态库的使用 gcc echo.c -o web_fcgi -L../libfcgi -lfcgi -static
+
+
+7.cpu占用率计算 1-△空闲t/△cpu服务t
+
+New World Door - Perl
+命令行: 使用参数-e 
+	语法：perl -e LineProgram
+	perl -e 'print "Hello World\n";'
+hello_world.pl
+	顺序执行，行以分号结尾。
+	#!/usr/bin/perl
+	print "Hello World!\n";  <=等价于=> print("Hello World\n"); 
+
+注释：
+	单行：#
+	多行：=pod  Code Lines =cut
+	
+引号的作用：
+	单引号：原样输出，不解析各种转义字符和变量。
+	双引号：解析转义字符和变量。
+	
+基础数据结构：不同类型的变量可以使用相同的名称
+	1.普通变量：$
+		$num = 199;
+		$str = "kill u"
+		访问：$num $str
+	2.数组：@
+		@arr = (1,2,3);
+		访问：$arr[0]
+			print @arr; 打印所有成员
+			$size = @arr; print $size; 打印最大可用尺寸
+			print $#arr; 打印最大可用索引值
+		创建序列化数组
+			@arr_100 = (1..100);或(a..z);
+		串格式化字符转换为数组
+			$str = "999-22-111";
+			@str_arr = split("-", $str);
+			print @str_arr;
+		数组格式化为字符串
+			@str_arr = (66, kk, 99);
+			$str = join("#", @str_arr);
+			print $arr;
+		排序
+			sort [rule] list
+			@sites = sort(@arr);
+		$[ 设置数组的第一个索引，默认数组从0开始，这个符号可以更改
+			$[ = 1;
+			那么@arr[1] <==等价于==> 原来的@arr[0];
+		数组合并
+			@arr1 = (1..5);
+			@arr2 = (a..z);
+			@arr3 = (@arr1, @arr2);
+			
+			
+	3.哈希键值对：%
+		%h = ("a"=>1, "b"=>2);
+		访问：$h{"a"}
+		value转换为数组：@arr = $h{a, b};
+		获取所有keys: 
+			语法 keys %hash; 
+			例子 @arr_keys = keys %h;
+		获取所有value 
+			语法 values %hash; 
+			例子 @arr_values = values %h;
+		检测元素key是否存在 
+			语法 exists($hash{'key'}) 
+			例子 if(exists(%h{'a'})) {}
+		添加元素
+			直接写入key-value：$h{'c'} = 3;
+		删除元素
+			delete $h{'b'};
+		
+		
+字符串处理：
+	1.连接：.
+		$str1 = "u is ";
+		$str2 = "dog ! ";
+		$var = 666;
+		$str = "say: " . $str1 . $str2 . $var;
+		
+特殊字符：
+	__FILE__ 文件名
+	__LINE__ 行号
+	__PACKAGE__ 包名
+	qw(); 用空格分隔，生成数组列表。
+
+
+
+\\192.168.1.40\jiaoyawei\fcgi\fcgi2\examples\web_fcgi.c
+
+$.cookie('key', 'value', { expires: 7 }); //设置为7天，默认值：浏览器关闭
+$.cookie('name'，'dumplings', {domain:'qq.com'});
+$.cookie('name'，'dumplings', {domain:'qq.com'，path:'/'}); 
+
+$.removeCookie('name',{ path: '/'}); //path为指定路径，直接删除该路径下的cookie
+$.cookie('name',null,{ path: '/'}); //将cookie名为‘openid’的值设置为空，实际已删除
+
+$.cookie('name')
+
+SHELL脚本 网上写的 有的真是可垃圾，我都不知道，这种编程是上哪里找官网的说明文档的，草他妈的。
+------------------------------------------------------------------------------------------------------------------------
+#!/bin/bash
+
+export 导出，执行脚本的shell和其子shell可以使用
+变量引用 $APP_PATH
+
+function_name() {}
+if [ ! -f "Makefile" ]; then	#如果文件不存在
+
+elif
+
+fi
+
+字符串比较 "a" = "a"
+数字比较 1 -eq 1
+
+参数：
+	$# 参数个数
+	$@ 参数列表
+	$1 第一个参数
+
+for opt in $@
+do
+	...
+done
+
+case opt in
+	all)
+		;;
+	*)
+		;;
+esac 
+------------------------------------------------------------------------------------------------------------------------
+
+Configure配置脚本中的一些有用参数
+--prefix=PREFIX 指定安装目录，使用make install后，将生成文件lib，bin等，安装在这个目录下
+--build 执行编译代码的主机
+--host	编译出来的二进制程序所执行的主机，例如arm-linux
+--target 这个选项只有在建立交叉编译环境的时候用到，正常编译和交叉编译都不会用到。他用build主机上的编译器，编译一个新的编译器（binutils, gcc,gdb等），这个新的编译器将来编译出来的其他程序将运行在target指定的系统上。
+CC 指定交叉编译工具链，或gcc
+
+Makefile:
+------------------------------------------------------------------------------------------------------------------------
+引用变量 $(OBJS) $(CC)
+核心规则：
+	目标target : 生成目标的依赖
+		command 如果依赖新于target，则直接执行command
+	注意：make会找到你第一个定义的目标target，并把它作为最终需要生成的默认目标target，一旦他生成，那么make将结束工作。
+	注意：make会找到你第一个定义的目标target，并把它作为最终需要生成的默认目标target，一旦他生成，那么make将结束工作。
+	注意：make会找到你第一个定义的目标target，并把它作为最终需要生成的默认目标target，一旦他生成，那么make将结束工作。
+		
+特殊符号：
+	$@ 目标target $^ 所有依赖 $< 第一个依赖
+.PHONY:clean
+	说明clean是一个伪目标文件，伪目标是一个label，不是一个文件。引入是为了在label和真正的目标文件重名是，作区分。
+伪目标的两种形式：
+	1.没有依赖
+	clean:
+		rm -rf *.o
+	
+	2.有依赖
+	all:web_fcgi echo test
+	
+	伪目标，make是不是去执行他的。需要执行伪目标有两种方式：
+		1.shell下显示调用 make clean 
+		2.将all放在所有目标target的最前面，使其变为默认目标。一般用于生成多个可执行文件的时候。
+
+静态模式：批量编译c文件为对应的o文件
+	targes:target-pattern:prereq-patterns
+		command
+	
+	objs=a.o b.o c.o
+	$(objs):%.o:%.c
+		gcc -c $< 
+		
+	等价于：
+	a.o:a.c
+		gcc -c a.c
+	b.o:b.c
+		gcc -c b.c
+	c.o:c.c
+		gcc -c c.c	
+
+	从编译打印也能看出，这样写makefile，实际在执行时还是会拆分成对应的三条来执行。所以这用了$<，不过应该和$@效果是一样的。
+
+两条相同的target处理
+	如果make遇到两条相同的target但是一来不同，例如：
+	target:dep1
+	target:dep2
+		command
+	这种情况，make会对两条进行合并，生成target:dep1 dep2 但是如果两条都分别有command，那么会报出警告，之后执行最后一条command。
+
+include a.d
+	将a.d文件包含进来，然后查找是否有规则更新a.d，如果有，更新，并将更新过得包含进来，如果没有或不需要更新，就完成。之后执行默认目标。
+	注意：include别放在第一条目标，如果在第一条，那他文件中的目标，将会被作为默认目标。
+	
+
+CFLAGS： 指定头文件（.h文件）的路径
+LDFLAGS：gcc 等编译器会用到的一些优化参数，也可以在里面指定库文件的位置。
+LIBS：告诉链接器要链接哪些库文件，如LIBS = -lpthread -lfcgi
+---------------------------------------------------------------------------------------------------------------------------
+ubuntu对时与更改时区
+对时 apt-get ntpdate, ntpdate ntp.ntsc.ac.cn 国家授时中心
+更改时区
+	1.获取配置文件 执行tzselect
+	2.删除原时区链接文件 /etc/localtime
+	3.创建新链接文件 ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+	完成
+---------------------------------------------------------------------------------------------------------------------------
+
+
+
+
