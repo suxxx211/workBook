@@ -70,7 +70,7 @@
 + [6-27 html .slot 和 vue 的组件混合使用](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-06-27_22.54_Thursday)
 + [6-28 vue.js 组件的$(emit)](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-06-28_22.19_Friday)
 + [6-29 smb访问软连接文件 linux 创建软连接 gcc 使用静态库](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-06-29_21.16_Saturday)
-+ [7-1 新的七月 新的一周 新的一天 packet 收包以及锁](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-07-01_23.34_Monday)
++ [7-1 新的七月 新的一周 新的一天 packet 收包以及锁 luaCLI执行exec调用vtysh](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-07-01_23.34_Monday)
 + [7-2 RECORD](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-07-02_22.53_Tuesday)
 + [7-3 linux 线程获取tpid 线程同步之条件变量cond](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-07-03_22.12_Wednesday)
 + [7-5 端口模式 access|trunk|hybrid](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-07-05_23.33_Friday)
