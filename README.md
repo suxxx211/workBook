@@ -78,4 +78,4 @@
 + [7-9 linux remove fprintf相关api L3web Q1-3疑问解答](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-07-09_22.20_Tuesday)
 + [7-10 linux 进程退出方式[exit]等 和 [atexit] c程序空间各段 L3线程锁的警告：永远不要重复释放一个未锁定的锁](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-07-10_23.54_Wednesday)
 + [7-11 linux 头文件的尖括号和引号的区别 js中页面跳转的几种方式](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-07-11_22.43_Thursday)
-+ [7-12 新的一天](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-07-12_00.00_Friday)
++ [7-17 Linux fork与vfork知识点 标准io与文件io缓冲](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-07-17_22.48_Tuesday)
