@@ -1,6 +1,6 @@
 # This document records daily work and other log infomation.
 
-2019/7/17 22.48 Tuesday
+2019/7/18 22.42 Tuesday
 
 .WORK_PLAN
     1.完成mirror其他的工作，删除无用的代码，看看web要不要改
@@ -19,8 +19,17 @@
     除学习任务，其他时间点可能不太会变，晚上时间可能不准，但是7必须要做，其他娱乐可自由安排一些。
     
 .WORK_COMPLETION
+    1.完成，一个端口支持出、入方向个一个目的监视端口。多个源端口可同时镜像到一个目的端口。不支持一个源端口镜像到多个目的端口。
+    2.聚合模块没调试完成。还需要时间。
     
 .STUDY_COMPLETION
+    1.完成
+    2.没有看
+    3.完成
+    4.完成
+    5.没有看书，继续吃饭工作
+    6.完成
+    7.完成
     
 .SUMMARY
     聚合配置cpssDxChTrunkDesignatedPortsEntrySet配置多端口时指定一个转发端口，给每个索引配置一个转发端口列表，之后哈希算法会去选择指定端口列表进行转发。
