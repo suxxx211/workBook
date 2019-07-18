@@ -23,3 +23,7 @@
 .STUDY_COMPLETION
     
 .SUMMARY
+    聚合配置cpssDxChTrunkDesignatedPortsEntrySet配置多端口时指定一个转发端口，给每个索引配置一个转发端口列表，之后哈希算法会去选择指定端口列表进行转发。
+    1.再谈进程的exit：终止状态与退出状态(我喜欢叫退出码)
+    之前学习到exit会执行atexit注册的退出函数，以及io冲洗，今天我们将exit与进程关联记起来。一个进程调用return、exit等方式结束自己的运行周期，那么，该进程会返回其终止状态，而不是返回return的参数。这里就要区分出终止状态和返回状态。
+    waitpid相关函数，在父进程中调用，之后阻塞等待子进程的退出，如果父进程不等待
