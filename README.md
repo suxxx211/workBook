@@ -81,3 +81,4 @@
 + [7-17 Linux fork与vfork知识点 标准io与文件io缓冲](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-07-17_22.48_Tuesday)
 + [7-18 Linux 再写exit了解进程的终止状态与退出状态(码) 需要补充setbuf设置io缓冲区 marvell聚合配置调试的思考](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-07-18_22.42_Thursday)
 + [7-19 Marvell trunk单端口转发devNum计算、多端口转发调试记录 万兆光口模式配置 V2R7 部分协议报文(igmp/arp)上cpu分析](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-07-19_23.35_Friday)
++ [7-22 Linux signal处理(exec、子进程相关等)](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-07-22_23.24_Friday)
