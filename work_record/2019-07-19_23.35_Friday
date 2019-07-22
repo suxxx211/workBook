@@ -41,6 +41,9 @@
     明天主要就是：
     L3 聚合loadbalance配置下发、gmrp在过一下、gvrp的时间配置下发、接口模式下删除vlan不生效(命令行配置cmd错误，还是用的add，应该用del)
     V2R7 分析一下arp的报文处理流程。
+    1.igmp的报文上cpu，直接调用的是bcmsdk中的api，其他的像gmrp之类的，都是acl上cpu。
+    2.arp的话，也是acl上的cpu，action为copy到cpu。但是bcm的芯片，如果配两个action，比如一个copy to cpu，一个未限速，实际效果来看是，报文复制了两份，是并行的，也就是说上cpu是上cpu，限速转发是限速转发，并没有说先限速，在上cpu，也就是说这样配置上cpu的报文，不会限速。
+    3.聚合的loadbalance配置下发，验证完成。
     
     
     
