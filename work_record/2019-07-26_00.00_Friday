@@ -22,3 +22,36 @@
 .STUDY_COMPLETION
     
 .SUMMARY
+    1.linux select
+    函数原型：int select(int nfds, fd_set *readfds, fd_set *writefds,
+                  fd_set *exceptfds, struct timeval *timeout);
+    函数监控三个类型的文件描述符集合：read、write、except，我们将需要监控的文件描述符，放入对应条件的集合中。nfds参数指明需要监控的描述符的最大值加一，timeout为监控(select阻塞)多少秒。
+    有数据可读，select会打开三个类型的文件描述符集合中的对应位，注意，select会修改这个的集合参数！！并返回准备好的文件描述符的总个数。
+    时间复杂度：O(n) 实现中，select将所有fd拷贝到内核，由内核对它们进行遍历。
+    select返回了可读文件描述符的个数，但是我们却并不能获取到时哪个文件描述符已经准备好了，所以我们只能无差别的轮询所有监控的描述符集合，然后检查哪一位处于打开的状态。
+    2.linux poll
+    函数原型：int poll(struct pollfd *fds, nfds_t nfds, int timeout);
+    poll为所有文件描述符提供一个pollfs结构，有成员指定我们想要等待的这个描述符的read、write、except等很多条件。timeout仍然为超时，-1为一直等待。
+    poll返回时，pollfd中成员revents，指定该文件描述符发生了什么事情，是可以读了，可以写了，还是别的什么。
+    时间复杂度：O(n) 和select相同，原因也相同
+    3.linux epoll (event poll)
+    函数原型：epoll并不是一个函数，他是一组函数，包括：epoll_create epoll_wait
+    epoll会将哪个文件描述符发生了什么事情通知给我们。
+    小结：select、poll、epoll本质上都是同步io
+    select可监控的最大文件描述符受系统限制，fd_set数据结构，本质是_kernel_fd_set默认32位系统为1024，64位为2048。可以修改，需要重新编译内核。select会进行fd从用户空间到内核空间的拷贝，并且在内核空间轮询遍历所有fd。
+    poll和select相同，但是不受最大文件描述符的限制，因为使用pollfd结构，是用链表进行存储的。
+    epoll有两种模式：LT\ET LT为默认模式水平触发，也就是文件描述符只要可读，就触发。ET为边缘模式，有数据流入时，它只触发一次，直到下次再有数据流入。在效率上，不采用轮询，可用的fd会调用callback(具体是什么要看内核实现了)，然后在用户态与内核之间的数据交互采用映射mmap机制。
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
