@@ -84,3 +84,5 @@
 + [7-22 Linux signal处理(exec、子进程相关等)](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-07-22_23.24_Monday)
 + [7-23 最基础的直连三层转发不通的一点点思考 明天记得继续分析验证 再记录](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-07-23_22.58_Tuesday)
 + [7-25 L3设备三层转发不通的分析(分析代码，配置不对，代码分析都在脑子里，没有总结写出来) Linux文件和记录锁的共享 OSPF邻居状态机的分析(硬核知识)](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-07-25_22.32_Thursday)
++ [7-26 Linux io多路复用小结](https://raw.githubusercontent.com/suxxx211/helloworld/master/work_record/2019-07-26_09.18_Friday)
+
