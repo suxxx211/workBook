@@ -1,6 +1,6 @@
 # This document records daily work and other log infomation.
 
-2019/7/30 22.21 Wednesday
+2019/7/31 23.05 Wednesday
 
 .WORK_PLAN
     1.继续学习ospf和isis
@@ -20,7 +20,20 @@
     除学习任务，其他时间点可能不太会变，晚上时间可能不准，但是7必须要做，其他娱乐可自由安排一些。
     
 .WORK_COMPLETION
+    1.继续ospf的验证和分析
+    2.确实是大概10分钟左右开始不发送hello报文
+    3.可以ping通
     
 .STUDY_COMPLETION
+    1.学习了ospf的知识
+    2.没看
+    3.完成
+    4.完成
+    5.修改web的问题
+    6.完成
+    7.完成
     
 .SUMMARY
+    今天的话，主要就是分析ospf的hello报文没有发出，但是没有结论。然后看了web的问题，没啥难的，就有几个关键点，vlan的uware模式，和tx是否带tag，这两个底层没有实现。然后今天修改了lldp的参数合法性检测，和mac地址的显示。还有要完成的是gmrp和gvrp定时器的问题，stp的wenti，别的应该都没了，问题应该不大，这周应该就能搞完。
+
+
