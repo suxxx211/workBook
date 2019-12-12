@@ -51,3 +51,22 @@ void get_cpuoccupy (CPU_OCCUPY *cpust)
 
     return ;
 }
+
+/* Test */
+int main()
+{
+    CPU_OCCUPY t1 = {0};
+    CPU_OCCUPY t2 = {0};
+    double usage = 0.0;
+    
+    get_cpuoccupy(&t1);
+    sleep(10);
+    get_cpuoccupy(&t2);
+
+    usage = cal_cpuoccupy(&t1, &t2) * 100;  // %
+    
+    /* Test Print */
+    printf("10s CPU Usage is %.2f\n");
+    
+    return 0;
+}
