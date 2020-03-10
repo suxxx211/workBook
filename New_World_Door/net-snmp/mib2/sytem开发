@@ -1,0 +1,46 @@
+    这次主要是为了在snmp nms端get|set systemName、location、contact节点时，snmp agent与appdemo进行ipc通信，获取appdemo中保存的节点数据。net-snmp源码中已经实现了这几个节点时get|set操作，那么就需要分析，在哪里进行处理这些数据，修改这部分代码，实现我们自己的功能。
+1.分析源码：net-snmp-5.7.3\agent\mibgroup\mibII\system_mib.c
+    从源码中可以看出，get|set操作实际上只是获取和修改几个static全局变量：
+    static char     sysContact[SYS_STRING_LEN] = NETSNMP_SYS_CONTACT;
+    static char     sysName[SYS_STRING_LEN] = NETSNMP_SYS_NAME;
+    static char     sysLocation[SYS_STRING_LEN] = NETSNMP_SYS_LOC;
+    主要体现在节点的注册函数上，以为sysContact例：
+    netsnmp_register_watched_scalar(
+            netsnmp_create_update_handler_registration(
+                "mibII/sysContact", sysContact_oid, OID_LENGTH(sysContact_oid), 
+                HANDLER_CAN_RWRITE, &sysContactSet),
+            netsnmp_init_watcher_info(
+                &sysContact_winfo, sysContact, SYS_STRING_LEN - 1,
+                ASN_OCTET_STR, WATCHER_MAX_SIZE | WATCHER_SIZE_STRLEN));
+    netsnmp_register_watched_scalar()函数为注册函数，具体使用的哪个mib2c的配置文件，不太清楚。该函数的参数为：
+        netsnmp_handler_registration *reginfo
+        netsnmp_watcher_info *watchinfo，
+    传入的实参为两个函数：
+        netsnmp_create_update_handler_registration()
+        netsnmp_init_watcher_info()
+        这两个函数填充一些数据，返回netsnmp_register_watched_scalar()函数所需要的两个参数。
+    在netsnmp_register_watched_scalar()函数中填充了数据处理接口函数netsnmp_get_watcher_handler()：
+        whandler = netsnmp_get_watcher_handler();
+        whandler->myvoid = (void *)watchinfo;
+    在netsnmp_get_watcher_handler()函数在net-snmp-5.7.3\agent\helpers\watcher.c文件中，函数调用：
+        netsnmp_create_handler("watcher", netsnmp_watcher_helper_handler);
+        注册netsnmp_watcher_helper_handler到处理函数中，这个函数应该是一个通用的处理函数。
+    在netsnmp_watcher_helper_handler()函数中就是简单的switch-case结构了，其中还需要注意的是，如何保证这个函数的通用性：
+        通过:netsnmp_watcher_info  *winfo = (netsnmp_watcher_info *) handler->myvoid;
+    结论：修改这种通用的处理函数，修改成我们专有的处理函数。
+2.修改
+    2.1使用mib2c生成新的标量代码：mib2c -c mib2c.scalar.conf SNMPv2-MIB:system
+    2.2修改system_mib.c init_system_mib()函数中的注册函数。
++                netsnmp_register_scalar(netsnmp_create_handler_registration
++                                    ("mibII/sysContact", handle_sysContact,
++                                     sysContact_oid, OID_LENGTH(sysContact_oid),
++                                     HANDLER_CAN_RWRITE));
+-                netsnmp_register_watched_scalar(
+-                    netsnmp_create_update_handler_registration(
+-                        "mibII/sysContact", sysContact_oid, OID_LENGTH(sysContact_oid), 
+-                        HANDLER_CAN_RWRITE, &sysContactSet),
+-                    netsnmp_init_watcher_info(
+-                        &sysContact_winfo, sysContact, SYS_STRING_LEN - 1,
+-                        ASN_OCTET_STR, WATCHER_MAX_SIZE | WATCHER_SIZE_STRLEN));
+    2.3下面的就不用写了，没啥东西了，ipc和数据处理了。
+    
