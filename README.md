@@ -6,8 +6,8 @@
 </div>
 
 
-| :hearts: | :hearts: | :hearts: | :hearts: |:hearts: | :hearts: | :hearts: |
-| :----: | :----: | :----: | :----: | :----: | :----: | :----: |
+        | :hearts: | :hearts: | :hearts: | :hearts: |:hearts: | :hearts: | :hearts: |
+        | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 
 
 ### Previous record
